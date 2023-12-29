@@ -1,0 +1,149 @@
+@font-face {
+  font-family: awsomemy;
+  src: url(goodtime.otf);
+}
+@font-face {
+  font-family: paragraphs;
+  src: url(JosefinSans-Italic.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  overflow: hidden;
+}
+.warning {
+  text-align: center;
+  color: darkmagenta;
+  font-size: 15px;
+  font-family: paragraphs;
+
+}
+.upload {
+  text-align: center;
+  font-size: 4.5vw;
+  margin: 5%;
+  font-family: awsomemy;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+/* button  */
+.btn-hover {
+  position: relative;
+  left: 10vw;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+.btn-hover.color-8 {
+  background-image: linear-gradient(
+    to right,
+    #29323c,
+    #485563,
+    #2b5876,
+    #4e4376
+  );
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+/* ............  */
+#drop {
+  color: black;
+}
+.drop-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 50px;
+  width: 500px;
+  height: 200px;
+  border: 4px dashed #000000;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+input.btn {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.input_hidden {
+  display: none;
+}
+.lal {
+  border: 4px solid;
+}
+/* footer  */
+.footer {
+  background-color: #fcc4f0;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer li {
+  list-style: none;
+}
+.footer ul {
+  padding: 10px;
+  display: flex;
+  gap: 30px;
+}
+.footer a {
+  font-size: 1.7vw;
+  text-decoration: none;
+  color: #000000;
+}
+.show {
+  color: #000000;
+}
+
+div .show {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20%;
+  font-size: 30px;
+  position: relative;
+  bottom: 20vw;
+}
+
+.home:hover {
+  color: darkmagenta;
+}
+
+.ri-instagram-line:hover::before {
+  color: palevioletred;
+}
+.ri-linkedin-fill:hover::before {
+  color: #0e76a8;
+}
+.ri-github-fill:hover::before {
+  color: white;
+}

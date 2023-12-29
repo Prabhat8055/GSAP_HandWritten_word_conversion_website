@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://th.bing.com/th?id=OIP.cKh250kAR1tnKxgh3bNSbgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/predict.css">
+    <title>Handwritten word conversion using image processing and CNN</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="upload">Test the project</h1>
+        <p class="warning">(Remember the model is still under development so the words will not predict correctly sometimes)</p>
+        <form action="/predict" method="post" enctype="multipart/form-data" id="uploadForm">
+            <!--action="{{url_for('predict')}}"-->
+            <div class="drop-zone">
+                <input type="file" name="file" id="imageUpload" class="input_hidden">
+                <span id="drop">Drag your image here or click in this area.</span>
+            </div>
+            <!-- <input type="submit" value="Upload and Predict" class="predict btn btn-primary" id="submit-button"> -->
+            <button type="submit" class="btn btn-hover color-8" id="submit-button">Upload image</button>
+        </form>
+        <div class="show">
+            <!-- <h1 id="P_text">{{ prediction_text }}</h1> -->
+            {% with messages = get_flashed_messages (with_categories=true) %}
+            {% for category, message in messages %}
+            <h4>{{ message | safe }}</h4>
+            {% endfor %}
+            {% endwith %}
+        </div>
+    </div>
+    <div class="footer">
+        <li><a href="{{ url_for('index') }}" class="home">Home</a></li>
+        <ul>
+            <li><a href="https://www.instagram.com/11prabhat_bhasme11/?hl=en"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/prabhat-bhasme-834b5b228"><i class="ri-linkedin-fill"></i></a></li>
+            <li><a href="https://github.com/Prabhat8055"><i class="ri-github-fill"></i></a></li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="/static/js/predict.js"></script>
+</body>
+
+</html>

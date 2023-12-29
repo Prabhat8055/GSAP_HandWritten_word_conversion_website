@@ -1,0 +1,69 @@
+@media screen and (max-width: 1017px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  nav a,
+  nav i {
+    font-size: 2.5vw;
+  }
+  .one {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  img.main-img {
+    width: 50%;
+    padding-top: 10px;
+  }
+  h1.heading {
+    font-size: 6.4vw;
+    word-spacing: 10px;
+    padding: 10px;
+  }
+  .headding-para p {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 3vw;
+  }
+
+  .middle-ele{
+    transform: rotate(90deg);
+    transform: translate3d(0px, 90px, 0px);
+  }
+}
+/* animations  */
+@keyframes mymove {
+  0% {
+    height: 10vw;
+  }
+  10% {
+    height: 12vw;
+  }
+  19% {
+    height: 14vw;
+  }
+  28% {
+    height: 16vw;
+  }
+  35% {
+    height: 18vw;
+  }
+
+  50% {
+    height: 20vw;
+  }
+  60% {
+    height: 16vw;
+  }
+  75% {
+    height: 14vw;
+  }
+  80% {
+    height: 13vw;
+  }
+  100% {
+    height: 10vw;
+  }
+}
